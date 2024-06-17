@@ -5,12 +5,12 @@
     ((arr == 'T') ? (*(text + (i) * (textSize + 1) + (j))) : 			\
     ((arr == 'P') ? (*(pattern + (i) * (patternSize + 1) + (j))) : 0))
 #define CONVERT_CHAR(c) ((c > 96) ? (c - 71) : (c - 65))
+
 int rowSize, textSize, patternSize; 
 char * text, * pattern;
 long long * textHash, * patternHash;
 long long * failureFucntion;
 long long modulo;
-
 int validShfit[1000000];
 int validShiftCount;
 int noMatch[1000000];
